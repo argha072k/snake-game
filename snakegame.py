@@ -26,8 +26,8 @@ head.direction="Stop"
 
 #for snake food
 food = turtle.Turtle()
-colors = random.choice(['red', 'green', 'black'])
-shapes = random.choice(['square', 'triangle', 'circle'])
+colors = "red"
+shapes= "circle"
 food.speed(0)
 food.shape(shapes)
 food.color(colors)
@@ -93,8 +93,8 @@ while True:
 		time.sleep(1)
 		head.goto(0, 0)
 		head.direction = "Stop"
-		colors = random.choice(['red', 'blue', 'green'])
-		shapes = random.choice(['square', 'circle'])
+		colors = "white"
+		shapes = "square"
 		for body in bodies:
 			body.goto(1000, 1000)
 		bodies.clear()
@@ -140,8 +140,8 @@ while True:
 			time.sleep(1)
 			head.goto(0, 0)
 			head.direction = "stop"
-			colors = random.choice(['red', 'blue', 'green'])
-			shapes = random.choice(['square', 'circle'])
+			colors = "white"
+			shapes = "square"
 			for body in bodies:
 				body.goto(1000, 1000)
 			body.clear()
@@ -155,8 +155,3 @@ while True:
 	time.sleep(delay)
 
 s.mainloop()
-
-
-
-
-
